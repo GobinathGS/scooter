@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+li,a{
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    
+}
+ .navbar{
+     list-style: none;
+ }
+
+ .navbar li{
+     display: inline-block;
+     padding: 0px 30px;
+ }
+.navbar img{
+    cursor: pointer;
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    display: grid;
+   justify-content: space-between;
+}
+.btn-1,.btn-2{
+    padding-top: 50px;
+}
+.content h1,p{
+    color: peru;
+} 
+.order{
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 40px;
+    background-color: peru;
+    font-size: 20px;
+    text-align: center;
+}
+.content{
+    letter-spacing: 1px;
+}
+.last h2{
+    text-align: center;
+    color: peru;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.card p{
+    color: peru;
+}
+
+
+@media only screen and (max-width: 768px){
+    .main,.last,header,.navbar,.card{
+        display: flex;
+        flex-direction: column;
+    }
+}
